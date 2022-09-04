@@ -1,2 +1,36 @@
 # Sprints-DevOps
-Task 1 
+## Task 01
+- install git on your computer
+- create a directory called Sprints-DevOps 
+- cd into Sprints-Devops
+- inititialize git inside the directory
+- create a repo on your github account called: Sprints-DevOps
+- using the web interface of github add a new file README.md 
+- commit the file with message "My First Git Commit from the web"
+- add remote repo to your local repo
+- create new branches (Dev, Test, Production)
+- change to Dev Branch
+- create a module (sprints.py) with function "MyFunc()" as mentioned below:
+	-- the function takes a list of integers and floats
+	-- return the mean value of even integer numbers
+	-- returns the max number of float point numbers
+	-- return 0 if the list doesn't contain neither int nor float
+
+- commit your changes with message "Task 01: sprints.MyFunc"
+- change to Test Branch
+- create a python file "test.py"
+- import sprints.py and call the function and test it with the lists 
+		-- hint: https://realpython.com/python-testing/
+- run the test on the code and commit with message "Task 02: Tests Passed"
+- change to Production Branch
+- write a bash script sshd.sh to do the following:
+	-- get an integer number input from the user Change the SSH Port
+	-- make sure the port is accepted in range
+	-- disable root login to system
+	-- make sure that there's at least one user with sudo privilege
+- add files that are passed from Test
+- commit your changes with message "Task 03: Securing SSH"
+- create a DockerFile using image python:3.8
+- set work directory /var/src/app
+- copy all the files in local directory to the container
+- commit your changes to repo with message "Task 04: DockerFile added"
